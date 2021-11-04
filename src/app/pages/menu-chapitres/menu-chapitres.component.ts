@@ -22,7 +22,7 @@ export class MenuChapitresComponent implements OnInit, OnDestroy {
   public logoRotationDeg = 0;
   public transformString = '';
   public unlockedSub: Subscription;
-  public estUnlocked: boolean;
+  public estUnlocked: boolean = true;
 
   constructor(private chansonService: ChansonService, private router: Router) {
     this.sub = this.chansonService.getSelectedSong().subscribe((chanson) => {
