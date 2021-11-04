@@ -36,7 +36,7 @@ export class MenuChapitresComponent implements OnInit, OnDestroy {
     });
 
     this.unlockedSub = this.chansonService.getEstDebloquee().subscribe((u) => {
-      this.estUnlocked = u;
+      this.estUnlocked = true;
     });
 
   }
