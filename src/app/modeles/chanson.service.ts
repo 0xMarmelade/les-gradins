@@ -16,7 +16,7 @@ export class ChansonService {
   private chansonActuelle: BehaviorSubject<Chanson> = new BehaviorSubject<Chanson>(Tracklist[0]);
   private saisonActuelle: BehaviorSubject<Saison> = new BehaviorSubject<Saison>(Saisons[0]);
   private personnage: BehaviorSubject<string> = new BehaviorSubject<string>('');
-  private estDebloquee: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
+  private estDebloquee: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(true);
   private audioList: BehaviorSubject<Array<any>> = new BehaviorSubject<Array<any>>([]);
 
   getSelectedSong(): Observable<Chanson>{
