@@ -27,7 +27,7 @@ export class MenuSaisonsComponent implements OnInit, OnDestroy {
   public rotationSaison = 12;
   public rotationChanson = 71;
   public rotationLogo = -45;
-  estUnlocked: boolean;
+  estUnlocked: boolean = true;
   unlockedSub: Subscription;
 
   constructor(private chansonService: ChansonService, private router: Router) {
